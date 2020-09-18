@@ -12,14 +12,23 @@
 	<div class="menubar">
 	    <ul class="navbar-nav mr-auto">
 	        <li>
-	          <a class="nav-link"  href="#myform"  id="register1">Add</a>
+	          <a class="nav-link"  href="#myform"  id="register1">Delete</a>
 	        </li>
 	        <li>
-	          <a class="nav-link" id="table"  href="#data">Display</a>
+	          <a class="nav-link" id="table"  href="#data">Add</a>
 	        </li>
 	    </ul>
 	</div>
 	<div class="page1" id="page1" style="display: block">
+		<form method="post" action="apiDelete.php">
+			<div class="formBox">
+				<h1>Delete Student Details</h1>
+				<input type="Number" name="uid" placeholder="UID">
+				<button type="submit">Done</button>
+			</div>
+		</form>
+	</div>
+	<div class="page2" id="page2" style="display: none">
 		<form method="post" action="api.php">
 			<div class="formBox">
 				<h1>Add Student Details</h1>
@@ -31,18 +40,6 @@
 				<button type="submit">Done</button>
 			</div>
 		</form>
-	</div>
-	<div class="page2" id="page2" style="display: none">
-		<table class="tableBox">
-			<tr>
-				<th>UID</th>
-				<th>First name</th>
-				<th>Last name</th>
-				<th>Date of admission</th>
-				<th>Subject 1</th>
-				<th>Subject 2</th>
-			</tr>
-		</table>
 	</div>
 	<script src="script.js"></script>
 </body>
